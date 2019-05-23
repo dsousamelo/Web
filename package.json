@@ -1,0 +1,52 @@
+{
+  "name": "trabalhoweb",
+  "version": "1.0.0",
+  "description": "A generated IBM Cloud application",
+  "private": true,
+  "engines": {
+    "node": "^8.11.1"
+  },
+  "config": {
+    "entrypoint": "app.js"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node --inspect=0.0.0.0:9229 $npm_package_config_entrypoint",
+    "debug:brk": "node --inspect-brk=0.0.0.0:9229 $npm_package_config_entrypoint",
+    "debug:legacy": "node --debug=0.0.0.0:5858 $npm_package_config_entrypoint",
+    "test": "nyc mocha --exit",
+    "dev": "nodemon $npm_package_config_entrypoint"
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_HEAPDUMP_OPTIONS": "nosignal"
+    }
+  },
+  "dependencies": {
+    "appmetrics-dash": "^4.0.0",
+    "appmetrics-prometheus": "^2.0.0",
+    "appmetrics-zipkin": "^1.0.4",
+    "body-parser": "^1.17.2",
+    "cfenv": "^1.2.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "formidable": "^1.2.1",
+    "grpc": "^1.18.0",
+    "http-errors": "^1.7.1",
+    "ibm-cloud-env": "^0",
+    "jquery": "^3.3.1",
+    "log4js": "^3.0.5",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.3.12",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.0",
+    "nyc": "^13.3.0"
+  }
+}
