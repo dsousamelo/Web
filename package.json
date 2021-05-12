@@ -34,7 +34,7 @@
     "express": "^4.16.4",
     "express-fileupload": "^1.0.0",
     "formidable": "^1.2.1",
-    "grpc": "^1.18.0",
+    "grpc": "^1.24.9",
     "http-errors": "^1.7.1",
     "ibm-cloud-env": "^0",
     "jquery": "^3.3.1",
